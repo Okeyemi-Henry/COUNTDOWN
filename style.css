@@ -1,0 +1,265 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url( "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+);
+
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+
+.logo{
+padding: 15px;
+font-family: 'Courier New', Courier, monospace;
+text-transform: uppercase;
+
+}
+
+
+
+nav{
+    background:rgb(0, 0, 0);
+    color:white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  
+}
+
+.nav-menu{
+    list-style: none;
+    display: flex;
+}
+
+
+.nav-menu li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: whitesmoke;
+    font-size: 1rem;
+}
+
+.nav-menu li a:hover{
+    
+    background: rgb(177, 72, 72);
+    border-radius: 6px;
+}
+
+
+.openMenu{
+    font-size: 1.5rem;
+    cursor: pointer;
+    margin: 20px;
+    display: none;
+}
+
+
+.closeMenu{
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .nav-menu{
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 10;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background: black;
+        transition: top 1s ease;
+        display:none;
+
+    }
+
+    nav .nav-menu .closeMenu{
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+
+    }
+    
+    .openMenu{
+        display: block;
+    }
+
+
+    .nav-menu li a:hover{
+        background: none;
+        color: rgb(177, 72, 72);
+        font-size: 1rem;
+    }
+
+    h1{
+        
+margin-left:40rem;
+width: 100%;
+align-items: center;
+justify-content: center;
+
+    }
+    
+    .countdown-c {
+     width: 100%;
+        margin-left:30rem ;
+    }
+}
+
+
+html{
+    height: 100%;
+    width: 100%;
+}
+
+
+body{
+    font-family: "poppins", sans-serif;
+    background-image:url("mini.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+
+}
+
+
+.countdown-c {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10rem;
+    margin-right:30rem ;
+}
+
+.justp{
+    font-weight: 2000rem;
+    font-size: 50px;
+    line-height: 1;
+    display: block;
+    justify-content: space-around;
+}
+
+
+h1{
+    font-size:3rem;
+    margin-top: 1rem ;
+margin-right: 33rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10rem;
+    color: rgba(255, 0, 0, 0.795);
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: lighter;
+}
+
+
+.big-text{
+    font-size: 4rem;
+    line-height: 1;
+    margin: 1rem 2rem;
+    color: blueviolet;
+}
+
+
+span{
+    font-size: 1rem;
+}
+
+
+.count-align{
+    text-align: center;
+}
+
+
+/*
+li{
+    list-style: none;
+}
+
+
+a{
+    color: aqua;
+}
+
+.navbar{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu{
+    justify-content: space-between;
+display: flex;
+gap: 50px;
+}
+
+.hamburger{
+    display: block;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: rgb(243, 241, 241);
+}
+
+
+@media(max-width:768px){
+.hamburger{
+    display: block;
+}
+.hamburger.active.bar:nth-child(2){
+    opacity: 0;
+}
+.hamburger.active.bar:nth-child(1){
+    transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active.bar:nth-child(1){
+    transform: translateY(-8px) rotate(-45deg);
+   
+}
+
+.nav-menu{ 
+    position: fixed;
+       left: -100; 
+       top: 70px;
+       gap: 0;
+       flex-direction: column;
+       width: 100%;
+       text-align: center;
+       transition: 0.3s;
+}
+
+.nav-item{
+    margin: 16px 0;
+}
+
+.nav-menu.active{
+
+    left:0;
+}
+}*/
